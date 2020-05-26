@@ -8,6 +8,10 @@ declare type Command = {
 
 declare const SIM_PERIOD: number;
 
+
+declare var after_physics: () => void;
+declare var flight_start: () => void;
+
 declare function create_dataref(dataref: string, type: string, handler: () => void): number;
 
 declare function find_dataref(dataref: string): number;
